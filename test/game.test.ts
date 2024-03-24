@@ -64,7 +64,7 @@ describe("game", () => {
         computer.play({ select: () => computerAction });
         /** START THE TOURNAMENT  */
         const game = new Game(wilfried, computer);
-        /** RUN THE GAME */
+        /** RUNw THE GAME */
         const result = game.run();
 
         expect(result).toEqual('player2');

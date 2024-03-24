@@ -1,12 +1,11 @@
 import { Game } from "./classe/Game";
 import { Player } from "./classe/Player";
+import { actionEnum } from "./enum/action.enum";
 import { createAction, randomizeAction } from "./functions/utilities";
 import { actionType } from "./type/action.type";
 
-
-
 // select random action
-const wilfriedAction = randomizeAction();
+const wilfriedAction = actionEnum.PAPER
 const computerAction = randomizeAction();
 // create players
 const wilfried = new Player();

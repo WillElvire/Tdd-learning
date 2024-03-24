@@ -1,5 +1,5 @@
 export enum actionEnum {
-    SCISSORS = "scissors",
-    ROCK = "rock",
-    PAPER = "paper"
+    SCISSORS = "Scissors",
+    ROCK = "Rock",
+    PAPER = "Paper"
 }

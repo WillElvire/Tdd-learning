@@ -22,7 +22,7 @@ export class Game  implements IGame{
         const action2 = this.player2.getAction();
 
         if(action1 === action2) {
-            return "null";
+            return "Tie";
         }
 
         if(action1 === actionEnum.ROCK && action2 === actionEnum.SCISSORS) {

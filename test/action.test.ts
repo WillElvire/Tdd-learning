@@ -1,5 +1,6 @@
 
 import { ActionFactory } from "../classe/ActionFactory";
+import { actionEnum } from "../enum/action.enum";
 import { actionAllowed, randomizeAction } from "../functions/utilities";
 
 describe("action", () => {
@@ -12,8 +13,7 @@ describe("action", () => {
 
     test("create action", () => {
         const actionChoosed = randomizeAction();
-        const action = ActionFactory.create(actionChoosed as "rock" | "paper" | "scissors");
-        console.log(action);
+        const action = ActionFactory.create(actionChoosed as actionEnum.ROCK | actionEnum.PAPER | actionEnum.SCISSORS);
         expect(action).toBeDefined();
     });
 });
