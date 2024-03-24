@@ -1,0 +1,1 @@
+export  type actionType = "scissors" | "rock" | "paper";
